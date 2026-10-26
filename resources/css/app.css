@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background-color: #06070a;
+        color: #e2e8f0;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+}
+
+/* Custom Street Graffiti & Abstract Spooky Styling */
+.font-graffiti {
+    font-family: 'Permanent Marker', 'Rubik Glitch', cursive, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.font-display {
+    font-family: 'Syne', sans-serif;
+}
+
+.font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Street Urban Abstract Void Background */
+.bg-void-dark {
+    background-color: #07080d;
+}
+
+.bg-void-pattern {
+    background-color: #06070a;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(255, 0, 85, 0.05) 0%, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* Street Brutalist / Spooky Glows */
+.graffiti-glow-green {
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.18), inset 0 0 10px rgba(0, 255, 136, 0.05);
+}
+
+.graffiti-glow-red {
+    box-shadow: 0 0 25px rgba(255, 0, 85, 0.2), inset 0 0 10px rgba(255, 0, 85, 0.05);
+}
+
+.graffiti-glow-purple {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.graffiti-card {
+    background: rgba(13, 15, 23, 0.85);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.graffiti-card:hover {
+    border-color: rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.08);
+}
+
+.graffiti-card-danger:hover {
+    border-color: rgba(255, 0, 85, 0.4);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.1);
+}
+
+.graffiti-card-purple:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
+}
+
+/* Stencil Spray Badge */
+.stencil-badge {
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+
+/* Custom Scrollbar for Street Void Aesthetic */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #08090d;
+}
+::-webkit-scrollbar-thumb {
+    background: #272a38;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff88;
+}
